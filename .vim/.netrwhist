@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/lh16/.tmux'
+let g:netrw_dirhist_2='/home/lh16/paru'
+let g:netrw_dirhist_1='/home/lh16/.config/waybar'
