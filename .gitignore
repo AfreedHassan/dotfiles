@@ -1,3 +1,4 @@
 .zen/
 .ssh/
 .env/
+.config/gh/hosts.yml
