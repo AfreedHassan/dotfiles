@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Email Tracker Detector & Blocker</title>
+	<style>
+		html{height:100%;}
+		body{height:100%;margin:0;padding:0;font-family:Arial,sans-serif;}
+
+		a{color:#666}
+
+		label{display:block;margin-bottom:8px;text-transform:capitalize}
+		label>input,label>textarea,label>select{width:100%;margin:4px 0;box-sizing:border-box;display:block;}
+		label>input[type=checkbox]{width:auto;display:inline-block}
+		label>a{float:right;font-size:80%;line-height:140%;text-decoration:none;}
+		input{margin:4px 0;padding:4px;}
+		textarea{height:80px;}
+		button,.button,input[type=submit],body .stripe-button-el span,body .stripe-button-el:not(:disabled):active span,body .stripe-button-el.active span{padding:9px 20px;border:0;border-radius:4px;box-shadow:inset 0 -3px 3px 1px #525252;cursor:pointer;background:#000;color:#fff;font-family:inherit;font-weight:700;text-decoration:none;display:inline-block;}
+
+		table,th,td{border:1px solid #666}
+
+		.Xtion_popup_container{width:100%;height:100%;position:fixed;top:0;left:0;z-index:9999999;/*display:table;table-layout:fixed;cuts off on low screen size <600px and low window size or high font size use flex instead as its fully supported by chromium https://stackoverflow.com/questions/79461/how-to-vertically-align-elements-in-a-div*/display:flex;justify-content:center;align-items:center;}
+		.Xtion_popup_overlay{width:110%;height:110%;position:absolute;top:0;left:0;background:rgba(0,0,0,0.8);cursor:pointer}/* Width+Height is 110% for compatibility with mobile */
+		.Xtion_popup_overlay:before{content:"\00d7";font-size: 56px;color:#fff;position:fixed;top:5px;right:20px;font-weight:700;line-height:56px;z-index:1;text-shadow:#000 0 0 1px,#000 0 0 1px,#000 0 0 1px, #000 0 0 1px,#000 0 0 1px,#000 0 0 1px;height: 43px;overflow: hidden;}
+		.Xtion_popup_content_container{width:100%;height:100%;/*display:table-cell see above;*/display:flex;justify-content:center;align-items:center;vertical-align:middle;text-align:center;}
+		.Xtion_popup_content{max-width:80%;max-height:100%;padding:15px;display:inline-block;box-sizing:border-box;position:relative;background:#fff;color:#000;overflow: auto;}
+
+		.Xtion_popup_prompt_inputs input{display:block;width:90%;margin:10px 0;padding:6px;}
+		.Xtion_popup_loading_container .Xtion_popup_content{max-width:100%;background:0;color:#fff;}
+
+		.Xtion_popup_content_actions>button,.Xtion_popup_prompt_actions>button{margin:10px 4px;}
+
+		.Xtion_popup_content form{text-align:left;}
+		.Xtion_popup_content form label{display:block;margin-bottom:6px;}
+		.Xtion_popup_content form label>*{display:inline-block;vertical-align:middle;}
+
+
+		#content{width:100%;max-width:600px;margin:0 auto;padding:20px;}
+	</style>
+</head><body>
+<div id="content">
+	<h1>Email Tracker Detector & Blocker Options</h1>
+	<form id="detector_options_form">
+		<label>Email Tracker Detector Status <select name="detector"><option value="1">Enabled</option><option value="0">Disabled</option></select></label>
+		<div id="detector_options_form_pro" style="border:1px solid #000;padding:10px;text-align:center">
+			<div style="text-align:center"><img src="image/icon_block.png" alt="Upgrade for desktop / email notifications and more professional features" style="width:128px;display:inline-block;margin:8px 0 4px 0;"/></div><br/>
+			<h1 style="margin-top:0;">Block Email Trackers Automatically</h1>
+			<h2 style="font-size:18px;margin-bottom: 8px;">Upgrade for professional features & settings</h2>
+			<ul style="  width:400px;	margin: 8px auto 10px auto;	font-size:14px;			text-align:left	">
+				<li>Automatically block all types of Email Trackers</li>
+				<li>Full Customization of Email Tracker Detector & Block Rules</li>
+				<li>Full Read Reports - Know exactly when and how your email recipients read your email and their IP address. Available immediately for all your existing tracked emails</li>
+				<li>Link Tracking - Know automatically if and when your recipients click on any email links</li>
+				<li>Location & Device Information - Find out where your email recipients are located. Get their country, city, ISP, internet type, coordinates, and postal area when available</li>
+				<li>Instant Desktop & Email Notifications - get notified the instant your emails are opened</li>
+				<li>And More</li>
+			</ul>
+			<a href="" target="_blank" id="detector_options_form_pro_link" class="button" style="font-size:125%">Learn More</a>
+		</div>
+		<br/>
+		<button>Save</button>
+		<br/>
+		<div id="detector_options_form_output"></div>
+	</form>
+</div>
+<script src="lib/global.js"></script><script src="lib/xtion.js"></script><script src="detector_options.js"></script></body></html>

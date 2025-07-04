@@ -1,0 +1,43 @@
+{
+   "action": {
+      "default_icon": "image/icon_inactive.38.png",
+      "default_popup": "popup.html",
+      "default_title": "Email Tracker"
+   },
+   "background": {
+      "service_worker": "service_worker.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "css/content.css" ],
+      "js": [ "lib/global.js", "lib/xtion.js", "lib/moment/moment-with-locales.min.js", "lib/moment/moment-timezone-with-data.min.js", "content.js" ],
+      "matches": [ "*://*.mail.google.com/*", "*://*.inbox.google.com/*", "*://*.mail.live.com/*", "*://*.outlook.live.com/*", "*://*.outlook.office.com/*", "*://*.outlook.office365.com/*", "*://*.mail.yahoo.com/*", "*://*/owa/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+   },
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "rules",
+         "path": "declarative_net_request_rules.json"
+      } ]
+   },
+   "default_locale": "en",
+   "description": "Find out if your emails get read + pixelblock. Free & unlimited email tracking for Gmail, Outlook, Hotmail, Office 365 & Yahoo Mail",
+   "host_permissions": [ "\u003Call_urls>" ],
+   "icons": {
+      "128": "image/icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuCRB6q5jdl5ufcvGlve0aMi41PgHMppDGObHy83jsbW3k6MhKlbCPWUjCPmksZqE2f2fbj2Gf2jEXVFCtlz5SHCKSUs3lP4oEbiB/G6NwGMTldrIhAMz6KuTWgUl3i+qUo6zg0fHAcfzz91r06nGLG4Djo3GZMyOHucNPri/cWK2Bf6tdWlXcUrF4QLc9cZrj4Z/zAPvZEbG/MEJGcyW6veSHoaHniEz5CVzfrIZtvpDZv5g6AfpSBoj07A3zFJ8j1XhVPugJyq4/1jN4L2yY127Tw56YdtQWt2MQZQJRlD5h8VdbOumgh6DPrrsO8VrKhfeJfPNsjfdaDfFxqwzfQIDAQAB",
+   "manifest_version": 3,
+   "name": "Email Tracker + Pixelblock Detector & Blocker",
+   "permissions": [ "tabs", "storage", "unlimitedStorage", "cookies", "declarativeNetRequest", "declarativeNetRequestWithHostAccess", "declarativeNetRequestFeedback", "gcm", "notifications", "scripting", "offscreen", "alarms", "webNavigation" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "5.0.20",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*/*" ],
+      "resources": [ "image/loading.gif", "image/loading_white.gif", "image/upgrade.jpg", "image/icon/desktop.png", "image/icon/phone.png", "image/icon/tablet.png", "image/icon/tv.png", "image/icon/link.png", "lib/global_content.js", "lib/gmail.js", "lib/outlook.js", "lib/outlook2.js", "lib/outlook2_disable_serviceworkers.js", "lib/yahoo.js", "lib/yahoo2.js" ]
+   } ]
+}

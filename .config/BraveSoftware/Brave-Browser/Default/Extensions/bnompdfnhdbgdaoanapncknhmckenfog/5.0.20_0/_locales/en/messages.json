@@ -1,0 +1,5 @@
+{
+   "error_feed_info": {
+      "message": "There was an error detecting the email details. If you cleared extension data or reinstalled the extension then it will delete all data and all old email views will not show email details such as subject or link. If none of these apply to you please contact us at info@emailtracker.website. Email clients can sometimes change things that may break parts of the extension."
+   }
+}

@@ -1,0 +1,24 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "128": "vv-icon-128.png",
+         "16": "vv-icon-16.png",
+         "48": "vv-icon-48.png"
+      },
+      "default_title": "Visualize Value"
+   },
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "description": "visualize value on every tab",
+   "icons": {
+      "128": "vv-icon-128.png",
+      "16": "vv-icon-16.png",
+      "48": "vv-icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApF74uPRzPv9u/II3FatqJ/N+SmEkZ0IHzqMaii4y21v/c1GPmUHtVJIusjlH8yhOjs7r1foOHJNmzBnOSymu7y61ccsdqhGz3xHf1EVp7gSQvQz/hbZszi2qctMc/cNo9mIyVKW8DU2VALBH8T3UqXWt5y7dCUk2bM/5X1vflKx4CWOHLuaNaOnbXQsaHyfU2GjcKrU0a2Guepm/fuPJzWypTDVDlYgKb8gCAroau7Em5otRX84BmWL8xP5GhscX39XHVwLBbfWc5NUpeN00MxLHW+u4iTkx0Eo/VATlHBbchPvkMkiK7kNfsH6Wb4mzbZJcIpCw5Jwd2nEgj+48XQIDAQAB",
+   "manifest_version": 2,
+   "name": "Visualize Value",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7"
+}

@@ -1,0 +1,66 @@
+.Xtion_popup_container{width:100%;height:100%;position:fixed;top:0;left:0;z-index:9999999;display:table;}
+.Xtion_popup_overlay{width:110%;height:110%;position:absolute;top:0;left:0;background:rgba(0,0,0,0.8);cursor:pointer}/*Width+Height 110% for compat with mobile */
+.Xtion_popup_content_container{width:100%;height:100%;display:table-cell;vertical-align:middle;text-align:center;}
+.Xtion_popup_content{display:inline-block;background:0;position:relative;text-align:center;color:#fff;}
+.Xtion_popup_content button{padding:9px 20px;border:0;border-radius:4px;cursor:pointer;background:#000;color:#fff;font-family:inherit;font-weight:700;text-decoration:none;display:inline-block;}
+
+.Xtion_popup_temporary_container{width:auto;max-width:600px;height:auto;margin:0 auto;top:50px;right:0;}
+.Xtion_popup_temporary_container .Xtion_popup_content{padding:10px;background:rgba(150,0,0,0.8);border-radius:15px;font-weight:700}
+
+.emailtracker_status{font-weight:400!important;}
+.emailtracker_status.emailtracker_show{position:fixed;z-index:9999999;}
+.emailtracker_status a{color:#00709f!important;text-decoration:none;}
+.emailtracker_status>span{max-width:640px;padding:15px;display:block;position:fixed;z-index:9999999;cursor:auto;user-select:text!important;-webkit-user-select:text!important;font-size:13px;font-weight:400;}
+.emailtracker_status.emailtracker_show>span{display:block!important;opacity:0;}
+.emailtracker_status>span>span{width:100%;max-width:640px;max-height:400px;margin:0;padding:8px;box-sizing:border-box;display:block;background:#fff;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);overflow:auto;text-align:left;color:#000!important;font-family:Arial,sans-serif!important;line-height:normal;}
+.emailtracker_status>span>span time{}
+.emailtracker_status>span>span span{color:#000!important;}
+.emailtracker_status>span>span p{color:#000!important;}
+.emailtracker_status>span>span>strong:first-child+table{margin-top:6px;}
+.emailtracker_status>span>span>strong>a{float:right;}
+.emailtracker_status>span>span>table{width:100%;margin:0 0 0 0;padding:0;list-style:none;border-collapse:collapse;}
+.emailtracker_status>span>span>table>tbody>tr>td{margin:0;padding:4px;text-align:left;background-color:transparent!important;color:#000!important;white-space:pre;}/*important backgrounds/colors due to stylish override*/
+.emailtracker_status>span>span>table>tbody>tr>td>*{vertical-align:middle}
+.emailtracker_status>span>span>table>tbody>tr>td>img,.emailtracker_status>span>span>table>tbody>tr>td>a>img{height:1em;vertical-align:middle!important;margin:0!important;}
+.emailtracker_status>span>span>table>tbody>tr:nth-child(odd)>td{/*noinspection CssOptimizeSimilarProperties*/background:0!important;/*noinspection CssOptimizeSimilarProperties*/background-color:#f0f0f0!important;}
+.emailtracker_status>span>span>table>tbody>tr>td>a{max-width:200px;display:inline-block;overflow:hidden;vertical-align:bottom;text-overflow:ellipsis;}
+.emailtracker_status>span>span>table>tbody>tr>td>a.link{white-space:pre;}
+.emailtracker_status>span>span>table>tbody>tr>td:last-child{text-decoration:none;text-align:right;}
+
+/* Detector */
+
+body .emailtracker_detector_icon{display:inline-block;vertical-align:middle;padding-left:5px;padding-right:5px;cursor:pointer;}
+body .emailtracker_detector_icon>a{color:rgb(31,31,31);text-decoration:none;}
+body .emailtracker_detector_icon_popover_container,body .adn.ads div.emailtracker_detector_icon_popover_container{max-width:680px!important;padding:15px;display:block;position:fixed;z-index:9999999;cursor:auto;user-select:text!important;-webkit-user-select:text!important;font-size:13px;font-weight:400;}
+body .emailtracker_detector_icon_popover{width:100%;max-width:680px;max-height:400px;margin:0;padding:8px;box-sizing:border-box;display:block;background:#fff;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);overflow:auto;text-align:left;color:#000!important;font-family:Arial,sans-serif!important;line-height:normal;white-space:normal;}
+body .emailtracker_detector_icon_popover>div{padding:0 4px}
+body .emailtracker_detector_icon_popover>div>strong{font-size:110%;}
+body .emailtracker_detector_icon_popover>ul{width:100%;margin:0;padding:0;list-style:none;border-collapse:collapse;}
+body .emailtracker_detector_icon_popover>ul>li{margin:0;padding:4px;border-bottom:1px solid #999;word-wrap:break-word}
+body .emailtracker_detector_icon_popover>ul>li:nth-child(odd){background-color:rgb(225,225,225);}
+body .emailtracker_detector_icon_popover>ul>li:last-child{border-bottom:0}
+body .emailtracker_detector_icon_popover button{font-size:90%;margin-top:-3px;padding:1px 6px;border:0;background:#000;color:#fff;cursor:pointer;display:inline-block;vertical-align:middle;}
+body .emailtracker_detector_icon_popover button:hover{background:#666;}
+
+.emailtracker_icon_help{margin-top:-2px;padding:1px 5px;background:#000;display:inline-block;vertical-align:middle;border-radius:50%;text-align:center;text-decoration:none;font-weight:700;color:#fff!important;}
+.emailtracker_icon_help:hover{background:#999}
+.emailtracker_icon_hover_opacity:hover{opacity:0.6}
+
+/* Compatibility */
+
+.emailtracker_gmail .iN .aDh{height:auto;overflow:auto;}/*composer bottom toolbar overflow cuts off*/
+.emailtracker_gmail .iN .gU[data-emailtracker]>*{vertical-align:middle;}
+.emailtracker_gmail .iN .emailtracker_untracked.gU{padding-left:0;}/*New Gmail UI*/
+.emailtracker_gmail .iN .aDh .emailtracker_untracked_inner{display:inline-block;vertical-align:middle;}
+.emailtracker_gmail .iN .aDh .emailtracker_untracked_inner>div{margin:6px 6px 6px 2px;border-radius:4px;padding-left:8px;padding-right:8px;}
+.emailtracker_gmail .iN .aDh td{vertical-align:text-top}/*send+archive buttons alignment issues*/
+.emailtracker_gmail .iN .aDh>table>tbody>tr:last-child>td{padding-right:4px}/*overflow auto scroll issue*/
+.emailtracker_gmail [data-emailtracker="1"]>.emailtracker_untracked_inner{display:none}/*GMAIL_SUBJECT_BUG*/
+.emailtracker_gmail .emailtracker_status{font-family:sans-serif}
+
+.emailtracker_yahoo2 .emailtracker_status{position:relative;top:-2px;}
+
+.emailtracker_yahoo3 span>[data-test-id="with-contact-card-anchor"]:first-child{display:inline-flex!important;}
+.emailtracker_yahoo3 .emailtracker_detector_icon{margin-top:-2px;}
+
+.emailtracker_outlook2 .emailtracker_messagelistfullwidth .emailtracker_status{position:absolute;left:0;}

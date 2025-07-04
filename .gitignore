@@ -2,3 +2,40 @@
 .ssh/
 .env/
 .config/gh/hosts.yml
+
+
+# Cache and sessions
+safeeyes/
+session/
+rofi.setup
+pulse/
+pavucontrol.ini
+wezterm/
+waybar/
+
+# Node version manager
+nvm/
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.log
+
+# Neovim swap, undo, backup
+nvim/swap/
+nvim/undo/
+nvim/backup/
+
+# Large app data
+BraveSoftware/
+spotify-player/
+libreoffice/
+
+# KDE specific runtime/user files
+kdeconnect/
+kdeglobals
+kiorc
+kwalletrc
+kservicemenurc
+ktrashrc

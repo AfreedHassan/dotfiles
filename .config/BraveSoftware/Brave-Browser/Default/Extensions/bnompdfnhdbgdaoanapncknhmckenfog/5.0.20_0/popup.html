@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><title>Feed</title><link href="css/popup.css" rel="stylesheet" type="text/css"/><link href="image/ionicons/ionicons.css" rel="stylesheet" type="text/css"/></head><body>
+	<header>
+		<div>
+			<a href="https://emailtracker.website/pro?source=feed_logo" id="logo"><img src="image/icon.png" style="height:17px;" alt="Logo"> Email Tracker <span class="active" id="edition">Pro</span></a>
+		</div><div>
+			<a id="notifications_toggle" title="Toggle Notifications" href="#" style="position:relative;top:-1px;">Notifications &nbsp;<i class="icon ion-toggle-filled" style="font-size:19px;vertical-align:middle;"></i></a>
+			<a id="feed_sync" title="Sync Feed Manually - Use if Feed is out of Sync" href="#" class="icon ion-refresh" style="font-size:16px;margin-left:4px;vertical-align:middle;"></a>
+			<a id="feed_export" title="Export Feed Data to CSV" href="#" class="icon ion-ios-download" style="font-size:16px;margin-left:4px;vertical-align:middle;"></a>
+			<a id="settings" title="Settings" href="#" class="icon ion-gear-b" style="font-size:16px;margin-left:4px;vertical-align:middle;"></a>
+		</div>
+	</header>
+	<nav id="navigation">
+		<a href="#" class="selected"><img src="image/icon.png" alt="All Activity"/> All</a>
+		<a href="#"><img src="image/envelope_open.png" alt="Opened"/> Opened</a>
+		<a href="#"><i class="icon ion-ios-email-outline"></i> Unopened</a>
+		<a href="#"><img src="image/clicks.png" alt="Clicks"/> Clicks</a><!--<a href="#"><i class="icon ion-android-share"></i> Revisited</a>-->
+		<a href="https://emailtracker.website/help"><i class="icon ion-help-circled" style="font-size: 12px;   margin-top: 2px;    display: inline-block;"></i> Help</a>
+		<a href="https://emailtracker.website/contact"><i class="icon ion-speakerphone" style="font-size: 12px;   margin-top: 2px;    display: inline-block;"></i> Feedback</a>
+	</nav>
+	<div id="feed">
+		<div class="selected"><ul id="feed_all" class="feed_content">
+			<li class="feed_search feed_notice"><label><i class="icon ion-ios-search-strong"></i> <input placeholder="Search by subject, from email, and recipient emails" type="text" class="feed_search_all"/></label><a id="feed_all_clear_notifications" class="feed_search_clear icon ion-trash-a" href="#" title="Clear All Notifications"></a></li>
+			<li class="feed_notice feed_notice_empty">All tracked emails will show up here. There will also be a red number badge beside the extension icon above to notify you when one or more new emails get opened. Finally you can also get desktop and email notifications by clicking on the settings icon (top right). Click the X button at the right of the search box to clear all notifications. If you have any issues please <a href="https://emailtracker.website/contact">contact us</a>.</li>
+		</ul></div><div><ul id="feed_opened" class="feed_content">
+			<li class="feed_search feed_notice"><label><i class="icon ion-ios-search-strong"></i> <input placeholder="Search by subject, from email, and recipient emails" type="text" class="feed_search_opened"/></label><a id="feed_opened_clear_notifications" class="feed_search_clear icon ion-android-close" href="#" title="Clear All Opened"></a></li>
+			<li class="feed_notice feed_notice_empty">Opened emails will show up here. There will also be a red number badge beside the extension icon above to notify you when one or more new emails get opened. Finally you can also get desktop and email notifications by clicking on the settings icon (top right). Click the X button at the right of the search box to clear all notifications. If you have any issues please <a href="https://emailtracker.website/contact">contact us</a>.</li>
+		</ul></div><div><ul id="feed_unopened" class="feed_content">
+			<li class="feed_search feed_notice"><label><i class="icon ion-ios-search-strong"></i> <input placeholder="Search by subject, from email, and recipient emails" type="text" class="feed_search_unopened"/></label><a id="feed_unopened_clear_notifications" class="feed_search_clear icon ion-android-close" href="#" title="Clear All Unopened"></a></li>
+			<li class="feed_notice feed_notice_empty">Unopened emails will show up here. Click the X button at the right of the search box to clear all unopened emails. If you have any issues please <a href="https://emailtracker.website/contact">contact us</a>.</li>
+		</ul></div><div><ul id="feed_clicks" class="feed_content">
+			<li class="feed_search feed_notice"><label><i class="icon ion-ios-search-strong"></i> <input placeholder="Search by link, from email, and recipient emails" type="text" class="feed_search_clicks"/></label><a id="feed_clicks_clear_notifications" class="feed_search_clear icon ion-android-close" href="#" title="Clear All Clicked Emails"></a></li>
+			<li class="feed_notice feed_notice_pro">Email link click tracking is only available for pro users. Once upgraded all your email links will automatically be tracked and you will be notified when a link is clicked. <a href="https://emailtracker.website/pro?source=feed_clicks">Click here to upgrade or login if you already upgraded</a>.</li>
+			<li class="feed_notice feed_notice_empty">Emails with link clicks will show up here. Click the X button at the right of the search box to clear all clicked emails. If you have any issues please <a href="https://emailtracker.website/contact">contact us</a>.</li>
+		</ul></div>
+	</div>
+	<footer>
+		<nav id="footer_left">
+			<a id="status" href="#">
+				<i class="icon ion-ios-email" style="font-size: 17px;    margin-right: 2px;    vertical-align: top;    height: 2px;    margin-top: -3px;"></i> Go to Email
+			</a>
+		</nav><nav>
+			<a title="Support Development" href="#" id="footer_support_development" style="position:relative;top:-1px;"><span style="font-size:11px">Support Development</span> <i class="icon ion-android-star"></i></a>&nbsp;
+		</nav>
+	</footer>
+	<script src="lib/global.js"></script><script src="lib/xtion.js"></script><script src="lib/moment/moment.min.js"></script><script src="lib/moment/moment-timezone-with-data.min.js"></script><script src="lib/papaparse.js"></script><script src="popup.js"></script></body></html>

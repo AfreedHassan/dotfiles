@@ -1,0 +1,12 @@
+[
+	{
+		"id":5000,"priority":1,
+		"action":{"type":"modifyHeaders","requestHeaders":[{"header":"origin","operation":"set","value":"https://mail.yahoo.com"}]},
+		"condition":{"urlFilter":"*://mail.yahoo.com/*","resourceTypes":["main_frame","xmlhttprequest"]}
+	},
+	{
+		"id":5001,
+		"condition":{"urlFilter":"https://whatismyipaddress.com/ip/*","resourceTypes":["main_frame","sub_frame"]},
+		"action":{"type":"modifyHeaders","responseHeaders":[{"header":"X-Frame-Options","operation":"remove"}]}
+	}
+]
