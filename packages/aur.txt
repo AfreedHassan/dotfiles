@@ -3,3 +3,8 @@ vicinae
 
 # Optional applications used by key bindings.
 helium-browser-bin
+
+# ThinkPad T480 Synaptics 06cb:009a fingerprint reader.
+fprintd-clients-git
+open-fprintd
+python-validity

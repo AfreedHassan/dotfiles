@@ -7,6 +7,7 @@ foot
 grim
 hyprland
 hyprlauncher
+hyprlock
 hyprpaper
 hyprshot
 jq
@@ -44,6 +45,7 @@ npm
 ripgrep
 tmux
 unzip
+usbutils
 vim
 wget
 zoxide

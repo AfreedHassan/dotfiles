@@ -55,10 +55,26 @@ Install Tmux plugins by starting Tmux and pressing `Ctrl-s`, then `I`.
 ## Key bindings
 
 - `Super+Space`: Vicinae
+- `Hyper+L`: lock with Hyprlock
 - `Super+R`: Hyprlauncher
 - `Super+C`: Rofi calculator
 - `Super+Print`: region screenshot to clipboard
 - `Super+B`: restart Waybar
+
+## Fingerprint login
+
+The ThinkPad T480 Synaptics `06cb:009a` reader uses `python-validity`,
+`open-fprintd`, and `fprintd-clients-git`; it is not supported by upstream
+`libfprint` alone. After the normal installer finishes, enroll and verify a
+fingerprint, then enable fingerprint login for Ly:
+
+```bash
+sudo ~/.dotfiles/scripts/setup-fingerprint.sh
+```
+
+The setup script backs up `/etc/pam.d/ly`, verifies the fingerprint before
+changing PAM, and retains password fallback. Fingerprint authentication is not
+enabled for `sudo` or polkit.
 
 ## Security
 
