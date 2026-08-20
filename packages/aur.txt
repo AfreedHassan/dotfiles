@@ -1,0 +1,5 @@
+# Build Vicinae locally so it links against the machine's libstdc++.
+vicinae
+
+# Optional applications used by key bindings.
+helium-browser-bin

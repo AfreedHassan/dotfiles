@@ -1,0 +1,79 @@
+* {
+    background: #181321;
+    background-alt: #241d30;
+    foreground: #feffe0;
+    selected: #5661ad;
+}
+
+window {
+    width: 640px;
+    border: 1px;
+    border-color: #4a5060;
+    border-radius: 12px;
+    background-color: @background;
+}
+
+mainbox {
+    padding: 22px;
+    spacing: 14px;
+    children: [inputbar, message, listview];
+}
+
+inputbar {
+    padding: 12px 14px;
+    spacing: 10px;
+    border-radius: 8px;
+    background-color: @background-alt;
+    text-color: @foreground;
+    children: [textbox-prompt-colon, entry];
+}
+
+textbox-prompt-colon {
+    str: "";
+    text-color: @foreground;
+}
+
+entry {
+    placeholder: "Search";
+    text-color: @foreground;
+    background-color: transparent;
+}
+
+listview {
+    lines: 8;
+    columns: 1;
+    spacing: 5px;
+    scrollbar: false;
+    background-color: transparent;
+}
+
+element {
+    padding: 10px 12px;
+    spacing: 12px;
+    border-radius: 8px;
+    text-color: @foreground;
+    background-color: transparent;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @foreground;
+}
+
+element-icon {
+    size: 24px;
+    background-color: transparent;
+}
+
+element-text {
+    vertical-align: 0.5;
+    background-color: transparent;
+    text-color: inherit;
+}
+
+message {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: @background-alt;
+    text-color: @foreground;
+}

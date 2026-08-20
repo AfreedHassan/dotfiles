@@ -1,0 +1,34 @@
+# Machine-local overrides
+config/hypr/local.conf
+config/hypr/hyprpaper.conf
+
+# Secrets and identity
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+*secrets*
+
+# Histories and generated state
+*history*
+*.log
+*.bak
+*.swp
+*.swo
+*.tmp
+.zcompdump*
+.viminfo
+.netrwhist
+
+# Application state that never belongs in this repository
+.cache/
+.local/share/
+.ssh/
+.gnupg/
+.config/gh/
+.config/pulse/
+.config/session/
+.config/systemd/user/*.wants/
+.tmux/plugins/
