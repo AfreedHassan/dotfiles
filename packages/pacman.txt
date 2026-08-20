@@ -8,6 +8,7 @@ hyprland
 hyprlauncher
 hyprpaper
 hyprshot
+jq
 kitty
 libnotify
 papirus-icon-theme
@@ -31,6 +32,7 @@ base-devel
 bat
 clang
 cmake
+cmark-gfm
 direnv
 fd
 ffmpeg
@@ -42,6 +44,7 @@ ripgrep
 tmux
 unzip
 vim
+wget
 zoxide
 zsh
 zsh-autosuggestions

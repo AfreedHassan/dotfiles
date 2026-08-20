@@ -1,4 +1,4 @@
-# Build Vicinae locally so it links against the machine's libstdc++.
+# cmark-gfm must be installed first from packages/pacman.txt.
 vicinae
 
 # Optional applications used by key bindings.
