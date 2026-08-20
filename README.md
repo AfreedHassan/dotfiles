@@ -2,6 +2,8 @@
 
 Portable Arch Linux configuration for Hyprland, Waybar, Vicinae, Rofi,
 Foot, Kitty, Zsh, Tmux, Vim, and btop. Neovim is intentionally unmanaged.
+The installer rebuilds Fontconfig caches after package installation to avoid
+Qt crashes caused by stale font metadata.
 
 ## Install
 

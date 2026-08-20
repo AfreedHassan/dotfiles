@@ -2,6 +2,7 @@
 brightnessctl
 btop
 firefox
+fontconfig
 foot
 grim
 hyprland

@@ -66,6 +66,8 @@ install_packages() {
   if ((${#aur[@]})); then
     run paru -S --needed "${aur[@]}"
   fi
+
+  run fc-cache -f
 }
 
 link_path() {
@@ -94,7 +96,7 @@ for file in .bash_profile .bashrc .gitconfig .tmux.conf .vimrc .zshrc; do
   link_path "$repo_dir/home/$file" "$HOME/$file"
 done
 
-for directory in btop foot hypr kitty rofi waybar; do
+for directory in btop foot hypr kitty rofi vicinae waybar; do
   link_path "$repo_dir/config/$directory" "$HOME/.config/$directory"
 done
 
