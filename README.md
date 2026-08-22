@@ -17,7 +17,9 @@ git clone https://github.com/AfreedHassan/dotfiles.git ~/.dotfiles
 
 The installer updates official packages, installs AUR packages with `paru`,
 backs up conflicting files with a timestamp, and creates symlinks. It is safe
-to run again.
+to run again. Fixedsys Excelsior Mono is downloaded from
+`AfreedHassan/FixedsysExcelsiorMono` at a pinned commit and verified before it
+is installed.
 
 Preview changes or install only configuration files:
 
@@ -55,7 +57,7 @@ Install Tmux plugins by starting Tmux and pressing `Ctrl-s`, then `I`.
 ## Key bindings
 
 - `Super+Space`: Vicinae
-- `Hyper+L`: lock with Hyprlock
+- `Super+M`: lock with Hyprlock
 - `Super+R`: Hyprlauncher
 - `Super+C`: Rofi calculator
 - `Super+Print`: region screenshot to clipboard

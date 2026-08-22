@@ -40,6 +40,29 @@ read_package_file() {
   done < "$file"
 }
 
+install_fixedsys_font() {
+  local destination="$HOME/.local/share/fonts/FixedsysExcelsiorMono.ttf"
+  local expected_sha256=13f3cca379ba1b717f01273db235f0855ccbde01a32fa479d30a7e678afee1c8
+  local url=https://raw.githubusercontent.com/AfreedHassan/FixedsysExcelsiorMono/8bf1c14f9bb23a8d81d2390b89b9885fdd4dfe56/FixedsysExcelsiorMono.ttf
+  local download
+
+  if [[ -f $destination ]] && printf '%s  %s\n' "$expected_sha256" "$destination" | sha256sum -c --status; then
+    printf 'Already installed: Fixedsys Excelsior Mono\n'
+    return
+  fi
+
+  if [[ $dry_run == true ]]; then
+    printf '+ install verified Fixedsys Excelsior Mono to %s\n' "$destination"
+    return
+  fi
+
+  download=$(mktemp)
+  wget -q "$url" -O "$download"
+  printf '%s  %s\n' "$expected_sha256" "$download" | sha256sum -c
+  install -Dm644 "$download" "$destination"
+  rm -f -- "$download"
+}
+
 install_packages() {
   if [[ ! -f /etc/arch-release ]]; then
     printf 'Package installation is only supported on Arch Linux.\n' >&2
@@ -67,6 +90,7 @@ install_packages() {
     run paru -S --needed "${aur[@]}"
   fi
 
+  install_fixedsys_font
   run fc-cache -f
 }
 
