@@ -1,6 +1,7 @@
 # Desktop
 brightnessctl
 btop
+dunst
 firefox
 fontconfig
 foot
@@ -20,6 +21,7 @@ polkit-kde-agent
 psmisc
 rofi
 rofi-calc
+satty
 slurp
 thunar
 ttf-jetbrains-mono-nerd
@@ -27,6 +29,7 @@ waybar
 wl-clipboard
 wireplumber
 xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
 xdg-utils
 
 # CLI and development

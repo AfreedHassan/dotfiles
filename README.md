@@ -1,7 +1,7 @@
 # Dotfiles
 
 Portable Arch Linux configuration for Hyprland, Waybar, Vicinae, Rofi,
-Foot, Kitty, Zsh, Tmux, Vim, and btop. Neovim is intentionally unmanaged.
+Foot, Kitty, Dunst, Satty, Zsh, Tmux, Vim, and btop. Neovim is intentionally unmanaged.
 The installer rebuilds Fontconfig caches after package installation to avoid
 Qt crashes caused by stale font metadata.
 
@@ -61,7 +61,13 @@ Install Tmux plugins by starting Tmux and pressing `Ctrl-s`, then `I`.
 - `Super+R`: Hyprlauncher
 - `Super+C`: Rofi calculator
 - `Super+Print`: region screenshot to clipboard
+- `Super+Shift+Print`: region screenshot with Satty annotation
+- `Caps Lock+Print`: region screenshot with Satty annotation
 - `Super+B`: restart Waybar
+
+In Satty, use `T` for text, `M` for numbered markers, `Z` for arrows, and
+`U` for blur. Press `Enter` to copy the result and exit, or `Ctrl+S` to save
+it under `~/Pictures/Screenshots/`.
 
 ## Fingerprint login
 

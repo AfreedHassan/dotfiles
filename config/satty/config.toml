@@ -1,0 +1,27 @@
+[general]
+fullscreen = "current-screen"
+floating-hack = true
+initial-tool = "arrow"
+copy-command = "wl-copy"
+output-filename = "~/Pictures/Screenshots/screenshot-%Y-%m-%d_%H-%M-%S.png"
+early-exit = ["copy"]
+actions-on-enter = ["save-to-clipboard"]
+actions-on-escape = ["exit"]
+corner-roundness = 8
+annotation-size-factor = 2
+default-round-caps = true
+brush-smooth-history-size = 5
+disable-notifications = true
+
+[font]
+family = "Adwaita Sans"
+style = "Regular"
+
+[color-palette]
+palette = [
+    "#e1251bff",
+    "#f0a030ff",
+    "#f2f2f2ff",
+    "#202124ff",
+    "#2f80edff",
+]
